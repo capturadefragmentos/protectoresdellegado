@@ -1,0 +1,128 @@
+{
+  "titulo": "El Murmullu",
+  "subtitulo": "Voces de la historia",
+  "descripcion": "Un podcast conversacional donde dos voces jóvenes y sus invitados cuentan mitos e historia de Lambayeque como se cuenta entre amigos: con misterio, humor y datos que ni los lambayecanos conocen.",
+  "origenNombre": "El nombre viene del mullu (Spondylus), la concha sagrada que solo la élite podía poseer.",
+  "episodios": [
+    {
+      "num": 1,
+      "segmento": "Mitos y Leyendas",
+      "titulo": "La leyenda de Naylamp",
+      "gancho": "¿Un dios que llegó del mar o un rey que nunca murió?",
+      "duracion": "30 min",
+      "youtube": "",
+      "spotify": "",
+      "estado": "proximo",
+      "color": "rojo",
+      "portada": ""
+    },
+    {
+      "num": 2,
+      "segmento": "Historia cultural",
+      "titulo": "El origen del Reino Sicán",
+      "gancho": "El reino del oro que nació entre algarrobos.",
+      "duracion": "30 min",
+      "youtube": "",
+      "spotify": "",
+      "estado": "proximo",
+      "color": "noche",
+      "portada": ""
+    },
+    {
+      "num": 3,
+      "segmento": "Mitos y Leyendas",
+      "titulo": "La piedra que llora sangre",
+      "gancho": "Un relato de Íllimo que todavía se cuenta en voz baja.",
+      "duracion": "30 min",
+      "youtube": "",
+      "spotify": "",
+      "estado": "proximo",
+      "color": "esmeralda",
+      "portada": ""
+    },
+    {
+      "num": 4,
+      "segmento": "Mitos y Leyendas",
+      "titulo": "La prisión del diablo y el cerro Mulato",
+      "gancho": "Dicen que hay un cerro que guarda algo que no debe salir.",
+      "duracion": "30 min",
+      "youtube": "",
+      "spotify": "",
+      "estado": "proximo",
+      "color": "teja",
+      "portada": ""
+    },
+    {
+      "num": 5,
+      "segmento": "Historia cultural",
+      "titulo": "Lambayeque y los Chimú",
+      "gancho": "Cuando un reino del sur llegó a gobernar el valle.",
+      "duracion": "30 min",
+      "youtube": "",
+      "spotify": "",
+      "estado": "proximo",
+      "color": "petroleo",
+      "portada": ""
+    },
+    {
+      "num": 6,
+      "segmento": "Mitos y Leyendas",
+      "titulo": "La serpiente de fuego y las huacas",
+      "gancho": "Fuego, huacas y un tesoro que quema.",
+      "duracion": "30 min",
+      "youtube": "",
+      "spotify": "",
+      "estado": "proximo",
+      "color": "rojo",
+      "portada": ""
+    },
+    {
+      "num": 7,
+      "segmento": "Mitos y Leyendas",
+      "titulo": "La Dama de los Lamentos",
+      "gancho": "Tradición oral de Zaña. Mejor escúchalo de día.",
+      "duracion": "30 min",
+      "youtube": "",
+      "spotify": "",
+      "estado": "proximo",
+      "color": "noche",
+      "portada": ""
+    },
+    {
+      "num": 8,
+      "segmento": "Historia cultural",
+      "titulo": "Lambayeque durante la colonia",
+      "gancho": "Lo que cambió y lo que resistió.",
+      "duracion": "30 min",
+      "youtube": "",
+      "spotify": "",
+      "estado": "proximo",
+      "color": "esmeralda",
+      "portada": ""
+    },
+    {
+      "num": 9,
+      "segmento": "Historia cultural",
+      "titulo": "La independencia y su impacto en la región",
+      "gancho": "El norte también escribió la historia.",
+      "duracion": "30 min",
+      "youtube": "",
+      "spotify": "",
+      "estado": "proximo",
+      "color": "teja",
+      "portada": ""
+    },
+    {
+      "num": 10,
+      "segmento": "Historia cultural",
+      "titulo": "Personajes históricos lambayecanos",
+      "gancho": "Nombres que deberías conocer.",
+      "duracion": "30 min",
+      "youtube": "",
+      "spotify": "",
+      "estado": "proximo",
+      "color": "petroleo",
+      "portada": ""
+    }
+  ]
+}

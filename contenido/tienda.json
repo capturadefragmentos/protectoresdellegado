@@ -1,0 +1,46 @@
+{
+  "productos": [
+    {
+      "producto": "Polo Protectores",
+      "detalle": "Algodón, isotipo bordado",
+      "precio": "",
+      "icono": "polo",
+      "imagen": ""
+    },
+    {
+      "producto": "Pin del Sol",
+      "detalle": "Metal esmaltado",
+      "precio": "",
+      "icono": "pin",
+      "imagen": ""
+    },
+    {
+      "producto": "Pack de stickers",
+      "detalle": "Iconografía lambayecana",
+      "precio": "",
+      "icono": "sticker",
+      "imagen": ""
+    },
+    {
+      "producto": "Llavero",
+      "detalle": "Sol de Naylamp",
+      "precio": "",
+      "icono": "llavero",
+      "imagen": ""
+    },
+    {
+      "producto": "Tomatodo",
+      "detalle": "Con grecas del legado",
+      "precio": "",
+      "icono": "vaso",
+      "imagen": ""
+    },
+    {
+      "producto": "Gorra",
+      "detalle": "Isotipo frontal",
+      "precio": "",
+      "icono": "gorra",
+      "imagen": ""
+    }
+  ]
+}

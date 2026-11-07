@@ -1,0 +1,40 @@
+{
+  "documentales": [
+    {
+      "titulo": "¿El Machu Picchu lambayecano?",
+      "descripcion": "Recorremos las Pirámides de Túcume con quienes las cuidan.",
+      "categoria": "Arqueología",
+      "duracion": "5 min",
+      "youtube": "",
+      "estado": "proximo",
+      "portada": ""
+    },
+    {
+      "titulo": "Algodón nativo: el hilo que no se rompió",
+      "descripcion": "Tejedoras que mantienen vivo un algodón de colores naturales.",
+      "categoria": "Tradiciones vivas",
+      "duracion": "4 min",
+      "youtube": "",
+      "estado": "proximo",
+      "portada": ""
+    },
+    {
+      "titulo": "El sabor del legado",
+      "descripcion": "Espesado, tortitas y dulces: lo que comemos también es herencia.",
+      "categoria": "Gastronomía",
+      "duracion": "4 min",
+      "youtube": "",
+      "estado": "proximo",
+      "portada": ""
+    },
+    {
+      "titulo": "Del ritual a la danza",
+      "descripcion": "El origen de una danza típica contado por quienes la bailan.",
+      "categoria": "Danzas y arte",
+      "duracion": "5 min",
+      "youtube": "",
+      "estado": "proximo",
+      "portada": ""
+    }
+  ]
+}

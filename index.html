@@ -1,0 +1,286 @@
+<!doctype html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Protectores del Legado</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Proyecto multimedia para revalorizar la cultura Lambayeque: podcast El Murmullu, documentales, mapa cultural, trivia y comunidad.">
+<meta property="og:title" content="Protectores del Legado">
+<meta property="og:description" content="Explora, escucha y descubre el legado que llevas dentro.">
+<meta property="og:image" content="img/logo-protectores.png">
+<link rel="icon" href="img/isotipo-dorado.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=League+Gothic&family=Titillium+Web:ital,wght@0,300;0,400;0,600;0,700;1,400&display=swap">
+<link rel="stylesheet" href="css/estilos.css">
+</head>
+<body>
+
+<a class="saltar" href="#descubre">Saltar al contenido</a>
+
+<!-- ============ CABECERA ============ -->
+<header class="cabecera" id="cabecera">
+  <div class="cabecera__in">
+    <a class="marca" href="#inicio" aria-label="Protectores del Legado, inicio">
+      <span class="marca__iso" aria-hidden="true"></span>
+      <span class="marca__txt">Protectores<br>del Legado</span>
+    </a>
+    <nav class="nav" id="nav" aria-label="Secciones">
+      <a href="#descubre">Descubre</a>
+      <a href="#murmullu">El Murmullu</a>
+      <a href="#documentales">Documentales</a>
+      <a href="#mapa">Mapa</a>
+      <a href="#juega">Juega</a>
+      <a href="#comunidad">Comunidad</a>
+      <a href="#tienda">Tienda</a>
+      <a href="#nosotros">Nosotros</a>
+    </nav>
+    <button class="btn-sonido" id="btnSonido" type="button" aria-pressed="false" title="Sonido del mar de Naylamp">
+      <span class="ondas" aria-hidden="true"><i></i><i></i><i></i></span><span class="btn-sonido__txt">Sonido</span>
+    </button>
+    <button class="hamburguesa" id="hamburguesa" type="button" aria-expanded="false" aria-controls="nav" aria-label="Abrir menú">
+      <span></span><span></span><span></span>
+    </button>
+  </div>
+</header>
+
+<main>
+
+<!-- ============ PORTADA ============ -->
+<section class="portada" id="inicio">
+  <div class="portada__foto" aria-hidden="true"></div>
+  <video class="portada__video" id="videoPortada" muted loop playsinline hidden></video>
+  <div class="portada__sol" aria-hidden="true"></div>
+  <svg class="portada__olas" viewBox="0 0 1200 120" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 60 Q 75 20 150 60 T 300 60 T 450 60 T 600 60 T 750 60 T 900 60 T 1050 60 T 1200 60 V120 H0Z"/>
+    <path d="M0 80 Q 75 45 150 80 T 300 80 T 450 80 T 600 80 T 750 80 T 900 80 T 1050 80 T 1200 80 V120 H0Z"/>
+  </svg>
+  <div class="portada__in">
+    <p class="ceja">Proyecto cultural multimedia · Lambayeque</p>
+    <h1 class="portada__titulo">
+      <span class="rota" id="palabraRota">Explora</span>
+      <span class="portada__resto">el legado que llevas dentro</span>
+    </h1>
+    <p class="portada__bajada">Mitos, oro, pirámides y voces que siguen vivas en el norte del Perú. Contados por jóvenes, para jóvenes.</p>
+    <div class="portada__acciones">
+      <a class="btn btn--oro" href="#murmullu"><span class="ico-play" aria-hidden="true"></span>Escuchar El Murmullu</a>
+      <a class="btn btn--linea" href="#descubre">Descubrir la historia</a>
+      <button class="btn btn--texto" id="btnTeaser" type="button" hidden>Ver teaser</button>
+    </div>
+  </div>
+  <p class="portada__credito">Pirámides de Túcume · PDL imágenes</p>
+</section>
+
+<!-- ============ ACCESOS RÁPIDOS ============ -->
+<nav class="accesos" aria-label="Accesos rápidos">
+  <div class="accesos__in">
+    <a class="acceso acceso--rojo" href="#murmullu"><span class="acceso__k">Podcast</span><span class="acceso__t">¿Naylamp: mito o realidad?</span></a>
+    <a class="acceso acceso--noche" href="#documentales"><span class="acceso__k">Documental</span><span class="acceso__t">¿El Machu Picchu lambayecano?</span></a>
+    <a class="acceso acceso--esmeralda" href="#mapa"><span class="acceso__k">Mapa cultural</span><span class="acceso__t">9 lugares para visitar</span></a>
+    <a class="acceso acceso--oro" href="#juega"><span class="acceso__k">Trivia</span><span class="acceso__t">Gana tu medalla</span></a>
+  </div>
+</nav>
+
+<!-- ============ DESCUBRE: LÍNEA DE TIEMPO ============ -->
+<section class="banda banda--crema" id="descubre">
+  <div class="banda__in">
+    <header class="encabezado">
+      <p class="ceja ceja--rojo">Descubre · Historia</p>
+      <h2>Ocho siglos en una línea</h2>
+      <p class="encabezado__bajada">Desliza y toca cada momento. Del primer templo Sicán a los hallazgos que todavía están cambiando la historia.</p>
+    </header>
+    <div class="linea" id="linea">
+      <div class="linea__pista" id="lineaPista" role="tablist" aria-label="Momentos de la historia"></div>
+      <article class="linea__detalle" id="lineaDetalle" aria-live="polite"></article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ RELATOS ============ -->
+<section class="banda banda--petroleo" id="relatos">
+  <div class="banda__in">
+    <header class="encabezado encabezado--claro">
+      <p class="ceja">Descubre · Relatos</p>
+      <h2>Historias que se cuentan en voz baja</h2>
+    </header>
+    <div class="relatos" id="relatos-lista"></div>
+  </div>
+</section>
+
+<!-- ============ GLOSARIO ============ -->
+<section class="banda banda--crema banda--compacta" id="glosario">
+  <div class="banda__in">
+    <header class="encabezado encabezado--fila">
+      <div>
+        <p class="ceja ceja--rojo">Descubre · Glosario</p>
+        <h2>Palabras del legado</h2>
+      </div>
+      <p class="encabezado__bajada">Toca una tarjeta para voltearla.</p>
+    </header>
+    <div class="glosario" id="glosarioLista"></div>
+  </div>
+</section>
+
+<!-- ============ EL MURMULLU ============ -->
+<section class="banda banda--rojo" id="murmullu">
+  <div class="banda__in murmullu">
+    <div class="murmullu__intro">
+      <p class="ceja">Podcast</p>
+      <h2 class="murmullu__titulo">El Murmullu</h2>
+      <p class="murmullu__sub">Voces de la historia</p>
+      <p id="podcastDesc"></p>
+      <p class="murmullu__nota" id="podcastOrigen"></p>
+      <div class="plataformas" id="plataformasPodcast"></div>
+      <div class="filtros" id="filtrosPodcast" role="group" aria-label="Filtrar episodios">
+        <button type="button" class="chip activo" data-seg="todos">Todos</button>
+        <button type="button" class="chip" data-seg="Mitos y Leyendas">Mitos y Leyendas</button>
+        <button type="button" class="chip" data-seg="Historia cultural">Historia cultural</button>
+      </div>
+    </div>
+    <ol class="episodios" id="episodios"></ol>
+  </div>
+</section>
+
+<!-- ============ DOCUMENTALES ============ -->
+<section class="banda banda--noche" id="documentales">
+  <div class="banda__in">
+    <header class="encabezado encabezado--claro encabezado--fila">
+      <div>
+        <p class="ceja">Documentales y reportajes</p>
+        <h2>La cultura, en primera persona</h2>
+      </div>
+      <div class="filtros" id="filtrosDocs" role="group" aria-label="Filtrar documentales"></div>
+    </header>
+    <div class="docs" id="docsLista"></div>
+  </div>
+</section>
+
+<!-- ============ MAPA ============ -->
+<section class="banda banda--crema" id="mapa">
+  <div class="banda__in">
+    <header class="encabezado encabezado--fila">
+      <div>
+        <p class="ceja ceja--rojo">Mapa cultural</p>
+        <h2>Ve a conocerlo en persona</h2>
+      </div>
+      <div class="filtros" id="filtrosMapa" role="group" aria-label="Filtrar lugares">
+        <button type="button" class="chip activo" data-tipo="todos">Todos</button>
+        <button type="button" class="chip" data-tipo="museo"><i class="punto punto--museo"></i>Museos</button>
+        <button type="button" class="chip" data-tipo="sitio"><i class="punto punto--sitio"></i>Sitios arqueológicos</button>
+        <button type="button" class="chip" data-tipo="fiesta"><i class="punto punto--fiesta"></i>Festividades</button>
+      </div>
+    </header>
+    <div class="mapa">
+      <div class="mapa__lienzo">
+        <svg id="mapaSvg" viewBox="0 0 650 950" role="img" aria-label="Mapa ilustrado de la región Lambayeque con lugares culturales"></svg>
+        <p class="mapa__nota">Mapa ilustrativo, no a escala.</p>
+      </div>
+      <div class="mapa__lado">
+        <article class="mapa__ficha" id="mapaFicha" aria-live="polite"></article>
+        <ul class="mapa__lista" id="mapaLista"></ul>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ JUEGA ============ -->
+<section class="banda banda--oro" id="juega">
+  <div class="banda__in juega">
+    <div class="juega__intro">
+      <p class="ceja ceja--noche">Juega y aprende</p>
+      <h2>¿Cuánto sabes del legado?</h2>
+      <p>Ocho preguntas. Acierta y gana tu medalla de Protector. Tu mejor resultado se guarda en este dispositivo.</p>
+      <div class="medallas" id="medallas" aria-label="Medallas"></div>
+    </div>
+    <div class="trivia" id="trivia" aria-live="polite"></div>
+  </div>
+</section>
+
+<!-- ============ COMUNIDAD ============ -->
+<section class="banda banda--crema" id="comunidad">
+  <div class="banda__in comunidad">
+    <div>
+      <p class="ceja ceja--rojo">Comunidad</p>
+      <h2>Sé un Protector del Legado</h2>
+      <p>¿Visitaste un museo, una huaca o una fiesta? Cuéntanos. Las mejores experiencias aparecen aquí y en nuestras redes con <strong id="hashtag"></strong>.</p>
+      <div class="muro" id="muro"></div>
+    </div>
+    <form class="formulario" id="formComunidad" novalidate>
+      <h3>Comparte tu experiencia</h3>
+      <label for="fNombre">Tu nombre</label>
+      <input id="fNombre" name="nombre" type="text" autocomplete="given-name" required>
+      <label for="fLugar">¿Qué lugar visitaste?</label>
+      <input id="fLugar" name="lugar" type="text" placeholder="Ej. Museo Tumbas Reales" required>
+      <label for="fTexto">¿Qué fue lo que más te sorprendió?</label>
+      <textarea id="fTexto" name="texto" rows="4" required></textarea>
+      <label class="check"><input id="fPermiso" type="checkbox" required> Acepto que publiquen mi experiencia en la web y redes.</label>
+      <button class="btn btn--rojo" type="submit">Enviar por WhatsApp</button>
+      <p class="formulario__msg" id="formMsg" role="status"></p>
+    </form>
+  </div>
+</section>
+
+<!-- ============ TIENDA ============ -->
+<section class="banda banda--papel" id="tienda">
+  <div class="banda__in">
+    <header class="encabezado encabezado--fila">
+      <div>
+        <p class="ceja ceja--rojo">Tienda</p>
+        <h2>Lleva el legado contigo</h2>
+      </div>
+      <p class="encabezado__bajada">Pedidos por WhatsApp. Envíos en Chiclayo y Lambayeque.</p>
+    </header>
+    <div class="tienda" id="tiendaLista"></div>
+  </div>
+</section>
+
+<!-- ============ NOSOTROS ============ -->
+<section class="banda banda--petroleo" id="nosotros">
+  <div class="banda__in nosotros">
+    <div>
+      <p class="ceja">Quiénes somos</p>
+      <h2>Un puente entre el pasado y nuestra generación</h2>
+      <p>Protectores del Legado nace de un grupo de jóvenes que quiere mantener viva la herencia cultural de Lambayeque. Usamos podcast, video y redes para contar esas historias desde una mirada actual, cercana y auténtica.</p>
+      <dl class="mv">
+        <div><dt>Misión</dt><dd>Preservar la cultura Lambayeque a través de la difusión de contenidos en medios digitales.</dd></div>
+        <div><dt>Visión</dt><dd>Lograr la revalorización del legado cultural lambayecano y difundirlo a nivel regional, nacional e internacional.</dd></div>
+      </dl>
+      <ul class="valores">
+        <li>Identidad</li><li>Cultura</li><li>Educación</li><li>Innovación</li><li>Comunidad</li>
+      </ul>
+    </div>
+    <div>
+      <h3 class="nosotros__sub">Equipo</h3>
+      <ul class="equipo" id="equipoLista"></ul>
+      <h3 class="nosotros__sub">Contacto</h3>
+      <ul class="contacto" id="contactoLista"></ul>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="pie">
+  <div class="pie__in">
+    <img class="pie__logo" src="img/logo-protectores.png" alt="Protectores del Legado" width="180" height="184">
+    <div class="pie__txt">
+      <p class="pie__lema" id="pieLema"></p>
+      <div class="redes" id="redesPie"></div>
+      <p class="pie__legal">Proyecto cultural multimedia <span id="pieAnio"></span> · Universidad Señor de Sipán · Chiclayo</p>
+    </div>
+  </div>
+</footer>
+
+<!-- Ventana para videos -->
+<div class="modal" id="modal" hidden>
+  <div class="modal__caja" role="dialog" aria-modal="true" aria-labelledby="modalTitulo">
+    <button class="modal__cerrar" id="modalCerrar" type="button" aria-label="Cerrar">×</button>
+    <h3 id="modalTitulo"></h3>
+    <div class="modal__video" id="modalVideo"></div>
+  </div>
+</div>
+
+<script src="js/app.js"></script>
+</body>
+</html>

@@ -1,0 +1,267 @@
+{
+  "lineaTiempo": [
+    {
+      "anio": "c. 750 d.C.",
+      "titulo": "Nace la cultura Sicán",
+      "texto": "Tras el declive mochica surge en el valle una nueva sociedad: los Sicán, también llamados Lambayeque."
+    },
+    {
+      "anio": "900 – 1100",
+      "titulo": "El esplendor de Batán Grande",
+      "texto": "En lo que hoy es el Bosque de Pómac se levantan templos monumentales y la orfebrería en oro alcanza su punto más alto."
+    },
+    {
+      "anio": "c. 1100",
+      "titulo": "Crisis y traslado a Túcume",
+      "texto": "Sequías y lluvias extremas golpean la región. Batán Grande es abandonado y el poder se mueve a Túcume, el valle de las pirámides."
+    },
+    {
+      "anio": "c. 1375",
+      "titulo": "Llegan los Chimú",
+      "texto": "El reino Chimú, desde el sur, conquista el valle de Lambayeque e integra a su gente y sus saberes."
+    },
+    {
+      "anio": "c. 1470",
+      "titulo": "Llegan los Incas",
+      "texto": "El Tawantinsuyo incorpora la costa norte. Túcume sigue siendo un centro importante."
+    },
+    {
+      "anio": "1586",
+      "titulo": "Se escribe la leyenda de Naylamp",
+      "texto": "El cronista Miguel Cabello Valboa recoge en su Miscelánea Antártica el relato oral del fundador que llegó por el mar."
+    },
+    {
+      "anio": "1936",
+      "titulo": "Aparece el Tumi de Oro",
+      "texto": "En Íllimo se descubre el tumi que hoy es símbolo del Perú y que muchos asocian a la figura de Naylamp."
+    },
+    {
+      "anio": "1987",
+      "titulo": "El Señor de Sipán",
+      "texto": "Walter Alva descubre la tumba del Señor de Sipán, gobernante mochica, antecesor de los Lambayeque en el valle."
+    },
+    {
+      "anio": "2001",
+      "titulo": "Museo Nacional Sicán",
+      "texto": "Ferreñafe abre un museo dedicado a esta cultura y a los hallazgos de Batán Grande."
+    },
+    {
+      "anio": "2011",
+      "titulo": "La Sacerdotisa de Chornancap",
+      "texto": "En Chotuna-Chornancap se halla la tumba de una mujer de alto rango, prueba del poder femenino en la sociedad lambayecana."
+    }
+  ],
+  "relatos": [
+    {
+      "titulo": "Naylamp, el que llegó del mar",
+      "etiqueta": "Leyenda",
+      "gancho": "Una flota de balsas aparece en la costa. Al frente, un señor con su corte y un ídolo de piedra verde.",
+      "texto": [
+        "Cuenta la tradición que, hace muchos siglos, una flota de balsas llegó a la desembocadura del río Faquisllanga. Al frente venía Naylamp, con su esposa Ceterni, músicos, cocineros, guardianes y un ídolo de piedra verde llamado Yampallec.",
+        "En tierra levantó un templo, Chot, y desde allí fundó una dinastía. Cuando murió, sus servidores lo enterraron en secreto y dijeron al pueblo que le habían crecido alas y se había ido volando.",
+        "Generaciones después, su descendiente Fempellec quiso mover el ídolo. Llegaron lluvias, inundaciones y hambre. Los sacerdotes lo culparon y lo arrojaron al mar. Así terminó la dinastía de Naylamp."
+      ],
+      "episodio": 1
+    },
+    {
+      "titulo": "El mullu, la concha más valiosa",
+      "etiqueta": "Objeto sagrado",
+      "gancho": "Valía más que el oro y venía de aguas que ningún lambayecano veía.",
+      "texto": [
+        "El Spondylus, o mullu, es una concha roja y anaranjada que vive en aguas cálidas y profundas, frente a lo que hoy es Ecuador. Para conseguirla se necesitaban buzos expertos y largas rutas de intercambio por mar.",
+        "En la sociedad lambayecana era un bien de prestigio: aparecía en ofrendas, adornos y entierros de la élite. Por eso nuestro podcast se llama El Murmullu: lo valioso también se transmite en voz baja."
+      ],
+      "episodio": null
+    },
+    {
+      "titulo": "La Sacerdotisa de Chornancap",
+      "etiqueta": "Hallazgo",
+      "gancho": "Una tumba con joyas, cerámica y acompañantes. Y quien mandaba era una mujer.",
+      "texto": [
+        "En 2011, el equipo del arqueólogo Carlos Wester La Torre encontró en Chotuna-Chornancap la tumba de una mujer de alto rango, enterrada con objetos de oro, plata y cerámica fina.",
+        "El hallazgo cambió la forma de entender la cultura Lambayeque: las mujeres también ocuparon el centro del poder religioso y político."
+      ],
+      "episodio": null
+    }
+  ],
+  "glosario": [
+    {
+      "termino": "Tumi",
+      "definicion": "Cuchillo ceremonial de hoja semicircular. El Tumi de Oro de Íllimo es el más famoso.",
+      "dato": "Hoy es un símbolo nacional del Perú."
+    },
+    {
+      "termino": "Mullu",
+      "definicion": "Nombre andino del Spondylus, concha sagrada traída desde aguas cálidas del norte.",
+      "dato": "Inspiró el nombre de El Murmullu."
+    },
+    {
+      "termino": "Huaca",
+      "definicion": "Lugar o construcción sagrada. En Lambayeque suelen ser pirámides de adobe.",
+      "dato": "En Túcume se cuentan 26 pirámides."
+    },
+    {
+      "termino": "Yampallec",
+      "definicion": "El ídolo de piedra verde que Naylamp trajo por mar, según la leyenda.",
+      "dato": "De su nombre vendría la palabra Lambayeque."
+    },
+    {
+      "termino": "Sicán",
+      "definicion": "Otro nombre de la cultura Lambayeque.",
+      "dato": "Se traduce como 'casa' o 'templo de la luna'."
+    },
+    {
+      "termino": "Muchik",
+      "definicion": "Lengua originaria de la costa norte, hablada en Lambayeque hasta inicios del siglo XX.",
+      "dato": "Hoy hay esfuerzos por revitalizarla."
+    }
+  ],
+  "lugares": [
+    {
+      "nombre": "Pirámides de Túcume",
+      "tipo": "sitio",
+      "lat": -6.5153,
+      "lon": -79.8427,
+      "texto": "El valle de las 26 pirámides y su Museo de Sitio. Último gran centro de poder lambayecano."
+    },
+    {
+      "nombre": "Bosque de Pómac",
+      "tipo": "sitio",
+      "lat": -6.47,
+      "lon": -79.783,
+      "texto": "Santuario histórico con huacas de Batán Grande entre algarrobos centenarios."
+    },
+    {
+      "nombre": "Chotuna – Chornancap",
+      "tipo": "sitio",
+      "lat": -6.719,
+      "lon": -79.958,
+      "texto": "Lugar asociado a la leyenda de Naylamp y a la Sacerdotisa de Chornancap.",
+      "episodio": 1
+    },
+    {
+      "nombre": "Huaca Rajada – Sipán",
+      "tipo": "sitio",
+      "lat": -6.802,
+      "lon": -79.602,
+      "texto": "Donde se halló al Señor de Sipán. Museo de sitio en el mismo lugar."
+    },
+    {
+      "nombre": "Museo Tumbas Reales de Sipán",
+      "tipo": "museo",
+      "lat": -6.7015,
+      "lon": -79.9035,
+      "texto": "Guarda el ajuar del Señor de Sipán, en la ciudad de Lambayeque."
+    },
+    {
+      "nombre": "Museo Brüning",
+      "tipo": "museo",
+      "lat": -6.7045,
+      "lon": -79.907,
+      "texto": "Museo arqueológico nacional con orfebrería y cerámica de la región."
+    },
+    {
+      "nombre": "Museo Nacional Sicán",
+      "tipo": "museo",
+      "lat": -6.639,
+      "lon": -79.787,
+      "texto": "En Ferreñafe. Dedicado a la cultura Sicán y a Batán Grande."
+    },
+    {
+      "nombre": "Cruz de Chalpón · Motupe",
+      "tipo": "fiesta",
+      "lat": -6.152,
+      "lon": -79.714,
+      "texto": "Una de las festividades religiosas más concurridas del norte. Agosto."
+    },
+    {
+      "nombre": "Divino Niño del Milagro · Eten",
+      "tipo": "fiesta",
+      "lat": -6.907,
+      "lon": -79.864,
+      "texto": "Fiesta patronal de Ciudad Eten, con procesiones y danzas. Julio."
+    }
+  ],
+  "trivia": [
+    {
+      "pregunta": "¿Cómo se llamaba el ídolo de piedra verde que trajo Naylamp?",
+      "opciones": [
+        "Yampallec",
+        "Ceterni",
+        "Fempellec"
+      ],
+      "correcta": 0,
+      "explicacion": "Yampallec. De su nombre vendría la palabra Lambayeque."
+    },
+    {
+      "pregunta": "¿Cuántas pirámides tiene el complejo de Túcume?",
+      "opciones": [
+        "12",
+        "26",
+        "40"
+      ],
+      "correcta": 1,
+      "explicacion": "26 pirámides de adobe en el llamado Valle de las Pirámides."
+    },
+    {
+      "pregunta": "¿Qué cultura construyó las pirámides de Túcume?",
+      "opciones": [
+        "Mochica",
+        "Lambayeque",
+        "Chimú"
+      ],
+      "correcta": 1,
+      "explicacion": "Los Lambayeque (Sicán). Luego las ocuparon Chimú e Incas."
+    },
+    {
+      "pregunta": "¿Qué era el mullu?",
+      "opciones": [
+        "Una danza",
+        "Una concha sagrada",
+        "Un tipo de tumi"
+      ],
+      "correcta": 1,
+      "explicacion": "El Spondylus, concha de aguas cálidas más valiosa que el oro."
+    },
+    {
+      "pregunta": "¿Dónde se encontró el famoso Tumi de Oro?",
+      "opciones": [
+        "Íllimo",
+        "Zaña",
+        "Pimentel"
+      ],
+      "correcta": 0,
+      "explicacion": "En Íllimo, en 1936."
+    },
+    {
+      "pregunta": "¿Qué significa Sicán?",
+      "opciones": [
+        "Casa de la luna",
+        "Río del sol",
+        "Ave del mar"
+      ],
+      "correcta": 0,
+      "explicacion": "Se traduce como 'casa' o 'templo de la luna'."
+    },
+    {
+      "pregunta": "¿Qué cultura conquistó Lambayeque hacia 1375?",
+      "opciones": [
+        "Inca",
+        "Chimú",
+        "Wari"
+      ],
+      "correcta": 1,
+      "explicacion": "El reino Chimú, que llegó desde el sur."
+    },
+    {
+      "pregunta": "¿Qué se halló en Chornancap en 2011?",
+      "opciones": [
+        "Un barco de totora",
+        "La tumba de una sacerdotisa",
+        "Un mapa de oro"
+      ],
+      "correcta": 1,
+      "explicacion": "La tumba de una mujer de alto rango: la Sacerdotisa de Chornancap."
+    }
+  ]
+}

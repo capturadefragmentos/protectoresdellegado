@@ -1,0 +1,207 @@
+# =====================================================================
+# PANEL DE ADMINISTRACIÓN — Protectores del Legado
+# Ya está configurado para tu cuenta de GitHub:
+# capturadefragmentos / repositorio protectoresdellegado
+# =====================================================================
+backend:
+  name: github
+  repo: capturadefragmentos/protectoresdellegado
+  branch: main
+  commit_messages:
+    update: "Actualiza {{slug}} desde el panel"
+    uploadMedia: "Sube imagen {{path}}"
+
+locale: es
+media_folder: img/subidas
+public_folder: img/subidas
+site_url: /
+display_url: /
+
+collections:
+  - name: contenido
+    label: Contenido de la web
+    editor: { preview: false }
+    files:
+
+      # ---------------- PODCAST ----------------
+      - name: podcast
+        label: "🎙️ El Murmullu (podcast)"
+        file: contenido/podcast.json
+        fields:
+          - { name: titulo, label: Nombre del podcast, widget: string }
+          - { name: subtitulo, label: Subtítulo, widget: string }
+          - { name: descripcion, label: Descripción, widget: text }
+          - { name: origenNombre, label: Origen del nombre, widget: text, required: false }
+          - name: episodios
+            label: Episodios
+            label_singular: episodio
+            widget: list
+            summary: "EP {{fields.num}} · {{fields.titulo}} ({{fields.estado}})"
+            fields:
+              - { name: num, label: Número de episodio, widget: number, value_type: int }
+              - { name: segmento, label: Segmento, widget: select, options: ["Mitos y Leyendas", "Historia cultural"] }
+              - { name: titulo, label: Título, widget: string }
+              - { name: gancho, label: "Frase gancho (una línea)", widget: string }
+              - { name: duracion, label: Duración, widget: string, default: "30 min" }
+              - { name: youtube, label: "Enlace de YouTube (pega el enlace completo)", widget: string, required: false }
+              - { name: spotify, label: "Enlace de Spotify", widget: string, required: false }
+              - { name: estado, label: Estado, widget: select, default: proximo, options: [{ label: "Próximamente", value: proximo }, { label: "Disponible", value: disponible }] }
+              - { name: color, label: Color de la portada, widget: select, default: rojo, options: [rojo, noche, esmeralda, teja, petroleo] }
+              - { name: portada, label: "Imagen de portada (opcional, cuadrada)", widget: image, required: false }
+
+      # ---------------- DOCUMENTALES ----------------
+      - name: documentales
+        label: "🎬 Documentales y reportajes"
+        file: contenido/documentales.json
+        fields:
+          - name: documentales
+            label: Documentales
+            label_singular: documental
+            widget: list
+            summary: "{{fields.titulo}} · {{fields.categoria}}"
+            fields:
+              - { name: titulo, label: Título, widget: string }
+              - { name: descripcion, label: Descripción corta, widget: string }
+              - { name: categoria, label: Categoría, widget: select, options: ["Arqueología", "Tradiciones vivas", "Danzas y arte", "Gastronomía"] }
+              - { name: duracion, label: Duración, widget: string, required: false }
+              - { name: youtube, label: "Enlace de YouTube", widget: string, required: false }
+              - { name: estado, label: Estado, widget: select, default: proximo, options: [{ label: "Próximamente", value: proximo }, { label: "Disponible", value: disponible }] }
+              - { name: portada, label: "Imagen de portada (opcional, vertical)", widget: image, required: false }
+
+      # ---------------- COMUNIDAD ----------------
+      - name: comunidad
+        label: "🤝 Comunidad (experiencias)"
+        file: contenido/comunidad.json
+        fields:
+          - name: comunidad
+            label: Experiencias publicadas
+            label_singular: experiencia
+            widget: list
+            required: false
+            summary: "{{fields.nombre}} · {{fields.lugar}}"
+            fields:
+              - { name: nombre, label: Nombre, widget: string }
+              - { name: lugar, label: Lugar visitado, widget: string }
+              - { name: texto, label: Experiencia, widget: text }
+
+      # ---------------- TIENDA ----------------
+      - name: tienda
+        label: "🛍️ Tienda"
+        file: contenido/tienda.json
+        fields:
+          - name: productos
+            label: Productos
+            label_singular: producto
+            widget: list
+            summary: "{{fields.producto}} · {{fields.precio}}"
+            fields:
+              - { name: producto, label: Nombre del producto, widget: string }
+              - { name: detalle, label: Detalle, widget: string }
+              - { name: precio, label: "Precio (ej. S/ 25). Vacío = Consultar", widget: string, required: false }
+              - { name: imagen, label: Foto del producto (opcional), widget: image, required: false }
+              - { name: icono, label: "Ícono si no hay foto", widget: select, default: pin, options: [polo, pin, sticker, llavero, vaso, gorra] }
+
+      # ---------------- EQUIPO ----------------
+      - name: equipo
+        label: "👥 Equipo"
+        file: contenido/equipo.json
+        fields:
+          - name: equipo
+            label: Integrantes
+            label_singular: integrante
+            widget: list
+            summary: "{{fields.nombre}}"
+            fields:
+              - { name: nombre, label: Nombre completo, widget: string }
+              - { name: rol, label: Rol en el proyecto, widget: string }
+              - { name: foto, label: Foto (opcional), widget: image, required: false }
+
+      # ---------------- DATOS GENERALES ----------------
+      - name: sitio
+        label: "⚙️ Datos generales, contacto y redes"
+        file: contenido/sitio.json
+        fields:
+          - name: sitio
+            label: Sitio
+            widget: object
+            fields:
+              - { name: nombre, label: Nombre, widget: string }
+              - { name: lema, label: Lema (pie de página), widget: string }
+              - { name: anio, label: Año del proyecto, widget: string }
+              - { name: hashtag, label: Hashtag, widget: string }
+              - { name: videoPortada, label: "Video de portada (.mp4, corto y sin audio)", widget: file, required: false }
+              - { name: teaserYoutube, label: "Teaser en YouTube (enlace)", widget: string, required: false }
+          - name: contacto
+            label: Contacto
+            widget: object
+            fields:
+              - { name: correo, label: Correo, widget: string }
+              - { name: whatsapp, label: "WhatsApp con código de país, sin espacios (ej. 51948053702)", widget: string }
+              - { name: whatsappVisible, label: "WhatsApp como se muestra (ej. 948 053 702)", widget: string }
+              - { name: ciudad, label: Ciudad, widget: string }
+          - name: redes
+            label: Redes sociales (enlaces completos)
+            widget: object
+            fields:
+              - { name: instagram, label: Instagram, widget: string, required: false }
+              - { name: tiktok, label: TikTok, widget: string, required: false }
+              - { name: youtube, label: Canal de YouTube, widget: string, required: false }
+              - { name: spotify, label: Spotify, widget: string, required: false }
+              - { name: facebook, label: Facebook, widget: string, required: false }
+
+      # ---------------- CULTURA ----------------
+      - name: cultura
+        label: "🏺 Historia, relatos, glosario, mapa y trivia"
+        file: contenido/cultura.json
+        fields:
+          - name: lineaTiempo
+            label: Línea de tiempo
+            label_singular: momento
+            widget: list
+            summary: "{{fields.anio}} · {{fields.titulo}}"
+            fields:
+              - { name: anio, label: "Año (ej. c. 1100)", widget: string }
+              - { name: titulo, label: Título, widget: string }
+              - { name: texto, label: Texto, widget: text }
+          - name: relatos
+            label: Relatos
+            label_singular: relato
+            widget: list
+            summary: "{{fields.titulo}}"
+            fields:
+              - { name: titulo, label: Título, widget: string }
+              - { name: etiqueta, label: "Etiqueta (Leyenda, Hallazgo…)", widget: string }
+              - { name: gancho, label: Frase gancho, widget: string }
+              - { name: texto, label: Párrafos, widget: list, field: { name: parrafo, label: Párrafo, widget: text } }
+              - { name: episodio, label: "N° de episodio relacionado (opcional)", widget: number, value_type: int, required: false }
+          - name: glosario
+            label: Glosario
+            label_singular: término
+            widget: list
+            summary: "{{fields.termino}}"
+            fields:
+              - { name: termino, label: Término, widget: string }
+              - { name: definicion, label: Definición, widget: text }
+              - { name: dato, label: Dato curioso, widget: string }
+          - name: lugares
+            label: Mapa cultural
+            label_singular: lugar
+            widget: list
+            summary: "{{fields.nombre}} · {{fields.tipo}}"
+            fields:
+              - { name: nombre, label: Nombre, widget: string }
+              - { name: tipo, label: Tipo, widget: select, options: [{ label: Museo, value: museo }, { label: Sitio arqueológico, value: sitio }, { label: Festividad, value: fiesta }] }
+              - { name: lat, label: "Latitud (de Google Maps, ej. -6.5153)", widget: number, value_type: float }
+              - { name: lon, label: "Longitud (ej. -79.8427)", widget: number, value_type: float }
+              - { name: texto, label: Descripción, widget: text }
+              - { name: episodio, label: "N° de episodio relacionado (opcional)", widget: number, value_type: int, required: false }
+          - name: trivia
+            label: Trivia
+            label_singular: pregunta
+            widget: list
+            summary: "{{fields.pregunta}}"
+            fields:
+              - { name: pregunta, label: Pregunta, widget: string }
+              - { name: opciones, label: Opciones (en orden), widget: list, field: { name: opcion, label: Opción, widget: string } }
+              - { name: correcta, label: "N° de la opción correcta (la primera es 0)", widget: number, value_type: int, min: 0 }
+              - { name: explicacion, label: Explicación, widget: string }
